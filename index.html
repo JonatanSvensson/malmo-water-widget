@@ -46,7 +46,7 @@
   <script>
     async function fetchWeather() {
       try {
-        const res = await fetch('https://yellow-heart-12d7.jonatansvenssondev.workers.dev/');
+        const res = await fetch('https://yellow-heart-12d7.jonatansvenssondev.workers.dev/data');
         if (!res.ok) throw new Error('Något gick fel');
         const data = await res.json();
 
